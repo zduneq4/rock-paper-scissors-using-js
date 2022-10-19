@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  gap: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btn {
+  width: 160px;
+  height: 160px;
+  margin: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.btn img:hover {
+  transform: scale(1.5);
+}
+
+.box-choices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 80px;
+  font-size: 1rem;
+}
+
+.player-choice,
+.comp-choice {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.score-box {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-score,
+.player-score {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.winner {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.reset {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 20px 30px;
+  color: #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reset:hover {
+  color: #333;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 411px) {
+  .btn {
+    width: 30px;
+    height: 30px;
+  }
+}

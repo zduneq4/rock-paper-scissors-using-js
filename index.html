@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styl.css" />
+  </head>
+  <body>
+    <div class="box">
+      <button data-selection="rock" class="btn">
+        <img src="./img/rock.png" alt="rock" />
+      </button>
+      <button data-selection="paper" class="btn">
+        <img src="./img/paper.png" alt="" />
+      </button>
+      <button data-selection="scissors" class="btn">
+        <img src="./img/scissors.png" alt="" />
+      </button>
+    </div>
+
+    <p class="player">player choice : <span class="player-choice"></span></p>
+
+    <p class="comp">pc choice : <span class="comp-choice"></span></p>
+
+    <div class="score-box">
+      <span class="player-score">0</span>:
+      <span class="comp-score">0</span>
+    </div>
+    <p class="winner"></p>
+
+    <button class="reset">reset game</button>
+    <script src="./main.js"></script>
+  </body>
+</html>
